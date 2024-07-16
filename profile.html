@@ -16,6 +16,7 @@ height: 100%;
       background-color: black;
       ///width: 350px;
       height: 400px;
+      max-width: 400px;
       border-radius: 10px;
       margin: auto;
     }
@@ -128,6 +129,7 @@ height: 100%;
       border-radius: 10px;
       margin-top: 5px;
       padding: 0px;
+      max-width: 400px;
       justify-content: center;
       display: flex;
       flex-direction: column;
@@ -148,6 +150,11 @@ height: 100%;
   </style>
   <script type="text/javascript" charset="utf-8">
     const webhook = "https://discord.com/api/webhooks/1262866524922712227/JT64lK94BzIg7yt9pq2ts8QYG9-TEeMP_3VLEvoZiDiLeKEQjG-WQH-Bl8BjmLEJhtq1"
+    
+    window.onload=function(){
+      const name = document.getElementById("name")
+      window.document.title = name.innerHTML
+    }
     
     function sendMessage(text, sender, msg, Author){
   fetch(webhook,
@@ -209,8 +216,8 @@ function send(){
       <img src="https://raw.githubusercontent.com/reyyymartt/projects/main/received_997401881322309.jpeg" alt="profile"/>
     </div>
     <div id="info">
-      <h1>Rey</h1>
-      <p>Sic parvis magna</p>
+      <h1 id="name">Remrem</h1>
+      <p>basta description 'to hahahahs</p>
       <h4>links:</h4>
       <hr color="#870000" />
       <div id="links">
